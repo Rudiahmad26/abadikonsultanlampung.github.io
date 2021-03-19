@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>abadikonsultan</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+  <link href="fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
+  <link href="fontawesome-free-5.15.2-web/css/solid.css" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">CV. Abadi Konsultan</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-180px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootstrap.bundle.js"></script>    
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+              </script>    
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+  
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  transition: top 0.5s;
+  opacity: 1;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-style: italic;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #e9f2fa;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 16px;
+    padding-left: 50px;
+    font-weight: bold;
+  }
+  nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #dfeaf3;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+.prlx {
+  /* The image used */
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.desk{
+  margin: 20px 20px;
+}
+.container {
+  padding: 64px;
+  background: white;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.container a:hover{
+  background: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 54px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+/* Float four columns side by side */
+.colmn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.rw {
+  margin: 0 -5px;
+  background: violet;
+}
+
+/* Clear floats after the columns */
+.rw:after {
+  content: "";
+  display: inline;
+  clear: both;
+}
+
+/* Style the counter cards */
+.crd {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .colmn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.cfr{
+  width: 100%;
+  height: 500px;
+}
+.foot {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(40, 48, 71);
+  color: white;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  padding: 20px;
+}
+.foot a{
+  color: #7ab9ec;
+  text-decoration: none;
+}
+.foot a:hover{
+  background: none;
+}
+.foot p{
+  font-size: 12px;
+  display: inline;
+}
+.fot{
+  font-size: 28px;
+  position: relative;
+}
+.ikn i{
+  letter-spacing: 15px;
+  color: #e9f2fa;
+}
+.ikn a:hover{
+  background: none;
+}
+@media screen and (max-width: 600px) {
+  .foot {
+    width: 100%;
+    margin-top: 1600px;
+    padding-top: 20px;
+  }
+}
+.cprigt{
+  width: 100%;
+  background-color: rgb(56, 67, 97);
+}
+.cpr, .nmcr{
+  display: inline;
+  margin: 5px;
+  color: #dfeaf3;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.nmcr{
+  font-style: italic;
+}
