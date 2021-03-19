@@ -19,12 +19,14 @@ nav{
   opacity: 1;
 }
 label.logo{
-  color: white;
+  /* color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
-  font-style: italic;
+  font-style: italic; */
+  width: 200px;
+  margin:20px;
 }
 nav ul{
   float: right;
@@ -59,11 +61,13 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 952px){
+@media (max-width: 720px){
   label.logo{
-    font-size: 16px;
+    /* font-size: 16px;
     padding-left: 50px;
-    font-weight: bold;
+    font-weight: bold; */
+    width: 150px;
+    margin: 20px;
   }
   nav ul li a{
     font-size: 16px;
@@ -252,11 +256,28 @@ img {
 .ikn a:hover{
   background: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .foot {
     width: 100%;
     margin-top: 1600px;
     padding-top: 20px;
+  }
+  .cprigt{
+    width: 100%;
+    background-color: rgb(56, 67, 97);
+  }
+  .cpr, .nmcr{
+    color: #dfeaf3;
+    margin-left: 10px;
+  }
+  .nmcr{
+    font-style: italic;
+    font-size: 3px;
+  }
+  .ikn {
+    background-color: rgb(40, 48, 71);
+    width: 100%;
+    margin-bottom: 5px;
   }
 }
 .cprigt{
