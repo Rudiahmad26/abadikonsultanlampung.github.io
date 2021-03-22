@@ -174,7 +174,7 @@ img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .column-66,
   .column-33 {
     width: 100%;
@@ -182,6 +182,9 @@ img {
   }
   img {
     margin: auto;
+  }
+  .button a{
+    font-size: 12px;
   }
 }
 /* Float four columns side by side */
@@ -271,6 +274,23 @@ img {
   }
   .cprigt .cpr{
     font-size: 10px;
+  }
+  .container{
+    width: 100%;
+  }
+  .xlarge-font{
+    font-size: 14px;
+    padding: 0;
+  }
+  .column-66{
+    width: 100%;
+    padding: 0;
+  }
+  .column-66 p{
+    font-size: 10px;
+  }
+  .large-font{
+    font-size: 14px;
   }
 }
 .cprigt{
