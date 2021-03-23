@@ -302,7 +302,7 @@ img {
 .ikn a:hover{
   background: none;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .container{
     width: 100%;
     margin: 0;
@@ -327,7 +327,7 @@ img {
   }
   .foot {
     width: 100%;
-    margin-top: 700px;
+    margin-top: 800px;
     padding-top: 20px;
     height : 300px;
   }
