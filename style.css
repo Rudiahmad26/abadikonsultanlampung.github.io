@@ -305,6 +305,7 @@ img {
   .container{
     width: 100%;
     padding: 20px 20px;
+    margin-bottom: 20px;
   }
   .container p{
     font-size: 14px;
