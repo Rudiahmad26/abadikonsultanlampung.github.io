@@ -6,6 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slides.css">
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
     <link href="fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
@@ -14,15 +15,9 @@
 </head>
 <body>
 
-    <nav id="navbar">
-      <!-- <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label> -->
-      <label class="logo"><img src="img/abdk.png"> </label>
-    </nav>
-
-      <div style="height: 80px; width: 100%;"></div>
+    <div class="header">
+        <a href="#default" class="logo"><img src="img/abdk.png"></a>
+      </div>
   
       <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Home</a>
@@ -32,10 +27,10 @@
           </button>
           <div class="dropdon-content">
             <a href="amdal.html">AMDAL/UKL-UPL/SPPL</a>
-            <a href="#">SURVEY GEOLISTRIK</a>
-            <a href="#">PEMBUATAN PETA TOPOGRAFI</a>
-            <a href="#">PEMBUATAN SUMUR BOR</a>
-            <a href="#">PUMPING TEST</a>
+            <a href="glistr.html">SURVEY GEOLISTRIK</a>
+            <a href="peta.html">PEMBUATAN PETA</a>
+            <a href="pump.html">PUMPING TEST</a>
+            <a href="sumbor.html">PEMBUATAN SUMUR BOR</a>
           </div>
         </div> 
 
@@ -44,8 +39,8 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdon-content">
-              <a href="#">Struktur organisasi</a>
-              <a href="#">legalitas Badan Usaha</a>
+              <a href="struktur.html">Struktur organisasi</a>
+              <a href="legalitas.html">Legalitas Badan Usaha</a>
             </div>
           </div> 
   
@@ -54,9 +49,9 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdon-content">
-              <a href="#">Tenaga Ahli Tetap</a>
-              <a href="#">Tenaga Ahli Tidak Tetap</a>
-              <a href="#">Officer</a>
+              <a href="tentap.html">Tenaga Ahli Tetap</a>
+              <a href="tentitap.html">Tenaga Ahli Tidak Tetap</a>
+              <a href="officer.html">Officer</a>
             </div>
           </div> 
   
@@ -65,55 +60,43 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdon-content">
-              <a href="#">AMDAL/UKL-UPL/SPPL</a>
-              <a href="#">SURVEY GEOLISTRIK</a>
-              <a href="#">PEMBUATAN PETA TOPOGRAFI</a>
-              <a href="#">PEMBUATAN SUMUR BOR</a>
-              <a href="#">PUMPING TEST</a>
+              <a href="pengalaman.html">Pengalaman Kami</a>
+              <a href="Client.html">Client Kami</a>
             </div>
-          </div> 
-  
-          <a href="#home">Contac</a>
+          </div>
 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+      </div>    
 
+      <div style="height: 50px; width: 100%;"></div>
 
-<!-- The App Section -->
 <div class="container">
-</div>      
-  
-  <div class="cfr">
-    <div class="rw">
-      <div class="colmn">
-        <div class="crd"><img src="img/IMG_20210224_164938.jpg" width="335" height="471">
-          <label class="jdl" style="font-weight: bold; size: 18px; margin-bottom: 25px;">AMDAL/UKL-UPL/SPPL</label>
-          <br>
+    
+    <div class="cner">
+        <img src="img/geol2.jpeg" alt="Avatar" class="ige">
+        <div class="orlay">
+          <div class="txt">Hello World</div>
         </div>
       </div>
-      <div class="colmn">
-        <div class="crd"><img src="img/csline.jpeg" width="335" height="471">
-          <label class="jdl" style="font-weight: bold; size: 18px; margin-bottom: 25px;">Survey Geolistrik</label>
-          <br>
+
+      <div class="cner">
+        <img src="img/geol2.jpeg" alt="Avatar" class="ige">
+        <div class="orlay">
+          <div class="txt">Hello World</div>
         </div>
       </div>
-      <div class="colmn">
-        <div class="crd"><img src="img/offc.png" width="335" height="471">
-          <label class="jdl" style="font-weight: bold; size: 18px; margin-bottom: 25px;">Membuat Peta Topografi</label>
-          <br>
+
+      <div class="cner">
+        <img src="img/geol2.jpeg" alt="Avatar" class="ige">
+        <div class="orlay">
+          <div class="txt">Hello World</div>
         </div>
       </div>
-      <div class="colmn">
-        <div class="crd"><img src="img/offc.png" width="335" height="471">
-          <label class="jdl" style="font-weight: bold; size: 18px; margin-bottom: 25px;">Membuat Peta Topografi</label>
-          <br>
-        </div>
-      </div>
-    </div>  
-  </div>
-  
-  
-  
+    
+</div>
+
+
+
   <div class="foot">
     <div class="fot">Hubungi Kami</div>
     <div class="prg">Konsultan Bidang Lingkungan Hidup</div>
@@ -168,7 +151,51 @@ var currentScrollPos = window.pageYOffset;
           }
         }
         </script>
-      
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("Slide");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+<script>
+    /* This code is not required for the animation. This is only needed for the repeatation */
+
+$(function(){
+  $('.repeat').click(function(){
+      var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+          $(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+</script>
 
 
 </body>
