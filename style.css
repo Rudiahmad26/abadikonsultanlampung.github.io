@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Georgia, serif;
+    font-family: sans-serif;
 }
 
 body{
     width: 100%;
     margin: 0;
     font-size: 18px;
+    background-color: whitesmoke;
   
 }
 nav{
@@ -170,6 +171,8 @@ section{
 .container {
   background: white;
   margin: auto;
+  border: 2px solid rgba(231, 195, 195, 0.288);
+  border-radius: 2%;
 }
 .container a:hover{
   background: none;
@@ -303,12 +306,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .container{
-    width: 100%;
     padding: 20px 20px;
     margin-bottom: 20px;
+    width: 100%;
   }
   .container p{
-    font-size: 14px;
+    font-size: 12px;
   }
   .xlarge-font{
     font-size: 5px;
@@ -468,7 +471,7 @@ img {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .header a {
     float: none;
     display: block;
@@ -477,6 +480,11 @@ img {
   
   .header-right {
     float: none;
+  }
+  .jdl{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 8px;
   }
 }
 
@@ -493,3 +501,17 @@ th, td {
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+.jdl{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .jdl{
+    font-size: 12px;
+  }
+}

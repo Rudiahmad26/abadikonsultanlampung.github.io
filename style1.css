@@ -300,11 +300,14 @@ body {
   justify-content: center;
   flex-grow: 1;
   min-height: 350px;
-  /* background: var(--main-purple-color)
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat
+  background:
+    url(img/bg2.jpg) no-repeat
     center / cover;
-  background-blend-mode: luminosity; */
-  color: var(--main-black-color);
+  /* background-blend-mode: luminosity; 
+  color: var(--main-black-color); */
+}
+.page-main p{
+  color: white;
 }
 
 .page-main div {
@@ -313,6 +316,8 @@ body {
 
 .page-main h1 {
   margin-bottom: 20px;
+  color: rgb(112, 174, 255);
+  font-weight: bold;
 }
 
 .page-main p + p {
